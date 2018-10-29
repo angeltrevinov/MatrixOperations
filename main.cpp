@@ -1,6 +1,6 @@
 /*
 Angel Odiel Treviño Villanueva		
-Descripcion: practive of operations with matrices 
+Descripcion: practice of operations with matrices 
 */
 #include <iostream>
 
@@ -16,8 +16,8 @@ void display(int iMat[7][7], int iRen, int iCol) {
 	}
 }
 
-//inicializa con 0
-void inicializaMatriz1(int iMat[7][7], int iRen, int iCol) {
+//initializes the matrix with 0
+void initializeMatrix0(int iMat[7][7], int iRen, int iCol) {
 	for (int i = 0; i < iRen; i++) {
 		for (int j = 0; j < iCol; j++) {
 			iMat[i][j] = 0;
@@ -197,7 +197,7 @@ int main() {
 	int iMat[7][7] = { { 2, 1, 3 },{ 5, 6, 9 },{ 1, 8, 4 } };
 
 	cout << "\nInicializa Matriz 1" << endl;
-	inicializaMatriz1(iMat, 3, 3);
+	initializeMatrix0(iMat, 3, 3);
 	display(iMat, 3, 3);
 
 	cout << "\nInicializa Matriz 2" << endl;
