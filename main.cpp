@@ -1,16 +1,13 @@
-// MatrizEjercicios.cpp : Defines the entry point for the console application.
-//
-
 /*
-Angel Odiel Treviño Villanueva		A01336559
-Descripcion: Ejercicios de Matrices
-LOC: 279	Tiempo: 2 horas
+Angel Odiel Treviño Villanueva		
+Descripcion: practive of operations with matrices 
 */
 #include <iostream>
 
 using namespace std;
 
-void despliega(int iMat[7][7], int iRen, int iCol) {
+//method that displays the entire matrix
+void display(int iMat[7][7], int iRen, int iCol) {
 	for (int i = 0; i < iRen; i++) {
 		for (int j = 0; j < iCol; j++) {
 			cout << iMat[i][j] << ' ';
@@ -201,23 +198,23 @@ int main() {
 
 	cout << "\nInicializa Matriz 1" << endl;
 	inicializaMatriz1(iMat, 3, 3);
-	despliega(iMat, 3, 3);
+	display(iMat, 3, 3);
 
 	cout << "\nInicializa Matriz 2" << endl;
 	inicializaMatriz2(iMat, 3, 3);
-	despliega(iMat, 3, 3);
+	display(iMat, 3, 3);
 
 	cout << "\nInicializa Matriz 3" << endl;
 	inicializaMatriz3(iMat, 3, 3);
-	despliega(iMat, 3, 3);
+	display(iMat, 3, 3);
 
 	cout << "\nInicializa Matriz 4" << endl;
 	inicializaMatriz4(iMat, 3, 3);
-	despliega(iMat, 3, 3);
+	display(iMat, 3, 3);
 
 	cout << "\nInicializa Matriz 5" << endl;
 	inicializaMatriz5(iMat, 3, 3);
-	despliega(iMat, 3, 3);
+	display(iMat, 3, 3);
 
 	int iMat3x3[7][7] = { { 2, 1, 3 },{ 5, 6, 9 },{ 1, 8, 4 } };
 	int iMat3x4[7][7] = { { 2, 1, 3, 6 },{ 5, 6, 9, 8 },{ 1, 8, 4, 7 } };
@@ -229,7 +226,7 @@ int main() {
 	cout << endl;
 
 	cout << "\niMatId..." << endl;
-	despliega(iMatId, 3, 3);
+	display(iMatId, 3, 3);
 	if (matrizIdentidad(iMatId, 3, 3) == true)
 		cout << "La matriz iMatId Si es identidad... yei !!";
 	else
@@ -238,10 +235,10 @@ int main() {
 	cout << endl;
 
 	cout << "\nMatriz 3 x 3" << endl;
-	despliega(iMat3x3, 3, 3);
+	display(iMat3x3, 3, 3);
 
 	cout << "\nMatriz 3 x 4" << endl;
-	despliega(iMat3x4, 3, 4);
+	display(iMat3x4, 3, 4);
 
 	cout << "\nSuma de matriz 3x4 = " << suma(iMat3x4, 3, 4) << endl;
 	cout << "\nSuma de matriz 3x3 = " << suma(iMat3x3, 3, 3) << endl;
